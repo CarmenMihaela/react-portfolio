@@ -1,0 +1,103 @@
+.projects {
+    padding-bottom: 5vh;
+
+    &_bio-image {
+        height: 15vh;
+        width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+
+      .text-secondary {
+        font-size: 5vh;
+        margin-bottom: 1vh;  
+      }
+    }
+    
+    &_items {
+        width: 60vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+
+    &_item {
+        position: relative;
+        border-bottom: 5px solid $secondary-color;
+        overflow: hidden;
+        cursor:pointer;
+
+        h1 {
+            position: absolute;
+            text-align: center;
+            margin: 0 0 0 auto;
+            width:100%;
+            background-color:rgba($primary-color, 0.7);
+            padding: 1%;
+            font-size: 2vh;
+            letter-spacing: 0;
+
+            span {
+                font-size: 3vh;
+                color: $secondary-color;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background:$secondary-color;
+            opacity: 0;
+            @include transition-ease;
+        }
+
+        &:hover {
+            &::after {
+                top: 0;
+                opacity: .0;
+            }
+            .projects_btn {
+                opacity: 1;
+            }
+        }
+    }
+
+    &_btns {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    &_btn {
+        opacity: 0;
+        color:whitesmoke;
+        @include transition-ease;
+        font-size: 2vh;
+        background-color:rgba($primary-color, 0.7);
+        
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+
+    footer {
+        margin:0;
+    }
+}

@@ -1,0 +1,23 @@
+
+@include media-lg {
+    .menu-btn button {
+        margin-left: 90vw;
+    }
+    header {
+        left: 80vw;
+
+        & nav ul {
+            margin-left: 7vw;
+            margin-top: 20vh;
+            font-size: 2vw;
+        }
+    }
+
+    .contact {
+        width:50%;
+        & h1 {
+            font-size: 2vw;
+        }
+    }
+
+}

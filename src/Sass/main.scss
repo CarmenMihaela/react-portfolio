@@ -1,0 +1,82 @@
+@import 'config';
+@import 'home';
+@import 'menu';
+@import 'about';
+@import 'projects';
+@import 'contact';
+@import 'responsive';
+
+body {
+    align-items: center;
+    text-align: center;
+    background: 
+      linear-gradient(
+        to top,
+        rgba($primary-color, 0.5),
+        rgba($primary-color, 0.0)
+        ),
+            url('https://cdn.pixabay.com/photo/2017/08/10/02/05/tiles-shapes-2617112_960_720.jpg') center top;
+    background-size: cover;
+    color: set-text-color($primary-color);
+    height: 100vh;
+    font-family: 'Monserrat', Tahoma, Verdana, sans-serif;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    &::-webkit-scrollbar { /* Hide scrollbar for Chrome, Safari and Opera */
+        display: none;
+    }
+        
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+    font-size: 3vh;
+}
+
+a {
+    color: set-text-color($primary-color);
+    text-decoration: none;
+}
+
+.text-secondary {
+    color:$secondary-color;
+}
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+
+    .social-icons {
+        font-size: 5vh;
+        position: fixed;
+        bottom: 10vh;
+        left:1rem;
+
+        a {
+            padding:  0.4rem;
+            @include transition-ease;
+
+            &:hover {
+                color:$secondary-color;
+            }
+        }
+    }
+}
+
+footer {
+    font-size: 1.5vh;
+    text-align: right;
+    position: relative;
+    right:0;
+    bottom:5vh;
+    padding: 0.5vh;
+    color:set-text-color($primary-color);
+}

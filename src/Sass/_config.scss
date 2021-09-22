@@ -1,0 +1,46 @@
+$primary-color: #404040;
+$secondary-color: #FF5CA0;
+$background-overlay: rgba(0, 0 , 0, 0.5);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color:blanchedalmond;
+}
+
+@mixin transition-ease {
+    transition: all 1s ease-in-out;
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content; 
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content; 
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1500px) {
+        @content; 
+    }
+}

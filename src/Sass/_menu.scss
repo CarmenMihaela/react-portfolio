@@ -1,0 +1,42 @@
+.menu-btn button {
+    background-color: transparent;
+    font-size: 36px;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    margin-top: 5vh;
+    margin-left:78vw;
+}
+
+.menu-btn {
+    z-index: 999999;
+    position: absolute;
+}
+
+header {
+    position: absolute;
+    left: 68vw;
+    top:0;
+    height:0;
+    transition: all .5s ease-in-out;
+
+
+    &.open {
+        height: 100%;
+        background-color: $background-overlay;
+    }
+    
+    
+    & nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    min-height: 100vh;
+    margin-top: 10vh;
+    line-height: 3;
+    color: whitesmoke;
+    font-size: 5vw;
+}
+}
+

@@ -1,5 +1,12 @@
 
 @include media-lg {
+    .homepage {
+        &_name {
+            height: 45vh;
+            width: 30vw;
+        }
+        
+    }
     .menu-btn button {
         margin-left: 90vw;
     }
@@ -7,17 +14,93 @@
         left: 80vw;
 
         & nav ul {
-            margin-left: 7vw;
+            margin-left: 5vw;
             margin-top: 20vh;
             font-size: 2vw;
         }
     }
 
     .contact {
-        width:50%;
+        margin:25vh auto;
+        height: 45vh;
+        width: 30vw;
         & h1 {
+            font-size: 1.8vw;
+            padding:2vw 0;
+        }
+        .social-icons {
+            top: 22vh;
+        }
+        
+    }
+    
+    .projects {
+        margin-top: 0vh;
+
+        h1 {
             font-size: 2vw;
+            margin-bottom: 0vh;
+        }
+
+        h4 {
+            padding: 1vw 0 1vw 0;
+        }
+
+        p {
+            font-size: 1.1vw;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 1200px;
+            margin: auto;
+            gap: 70px;
+
+            .article {
+                height: 40vh;
+                width: 27vw;
+                margin-top:5vw;
+                border-radius: 10px;
+                backdrop-filter: blur(10px);
+                box-shadow: $secondary-color 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, $secondary-color 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, $primary-color 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, $secondary-color 30px -30px, $secondary-color 40px -40px 0px -3px, $primary-color 40px -40px;
+            }
+            
+            .github, .online {
+                margin-left: 5vw;
+            }
+  
+            .online {
+                margin-left: 17vw;
+
+        }}
+    }
+
+    .about {
+        .me {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            max-width: 1200px;
+            margin: auto;
+            gap: 0px; 
+
+            img {
+                margin-top: 5vh;
+                margin-left: 2vw;
+                height: 200px;
+                margin-bottom: 2vh;
+            }
+
+            p {
+                font-size: 1.5vw;
+                padding:1vw;
+            }
         }
     }
+.about {
+    .work {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 
 }

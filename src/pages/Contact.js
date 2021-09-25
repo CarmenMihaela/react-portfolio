@@ -3,8 +3,7 @@ import {FaGit, FaGithub, FaLinkedin, FaEnvelopeSquare} from "react-icons/fa"
 const Contact = () => {
     return (
         <div className="contact">
-        <h1>Hey there, I am Carmen Vernica, a front-end developer.
-        Let's connect!</h1>
+        <h1>Hey there, if you are interested in my work, let's connect!</h1>
         <div className="social-icons">
             <ul >
                 <li><a href="https://github.com/CarmenMihaela" target="_blank" rel="noopener noreferrer"> <FaGithub/></a></li>

@@ -1,15 +1,22 @@
 .contact {
-    width:75%;
+    height: 35vh;
+    width: 80vw;
     display: flex;
     justify-content: center;
-    margin:auto;
-    margin-top: 30vh;
+    margin-left: 5vw;
+    margin-top: 32vh;
     box-shadow: $secondary-color 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, $secondary-color 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, $primary-color 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, $secondary-color 30px -30px, $secondary-color 40px -40px 0px -3px, $primary-color 40px -40px;
     color:whitesmoke;
+    max-width: 400px;
+    max-height: 290px;
+    backdrop-filter: blur(10px);
      
     & h1 {
         font-size: 7vw;
         padding: 5vw;
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+        0px 8px 13px rgba(0,0,0,0.1),
+        0px 18px 23px rgba(0,0,0,0.1);
     }
 
     ul {
@@ -24,7 +31,7 @@
     .social-icons {
         font-size: 5vh;
         position: fixed;
-        bottom: 25vh;
+        top: 25vh;
 
         a {
             padding:  0.4rem;

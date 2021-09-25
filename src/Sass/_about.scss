@@ -1,68 +1,53 @@
 .about {
-    padding-bottom: 7vh;
-    font-size: 3.5vw;
-    
+    margin-top: 5vh;
 
-    &_bio-image { 
+    .me {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr;
-        grid-gap: 5px;
-        height: 100%;
-        overflow: hidden;
-        align-items: left;
-        text-align: left;
-        background: 
-        linear-gradient(
-            to top,
-            rgba($primary-color, 0.8),
-            rgba($primary-color, 0.3)
-            ),
-                url('https://cdn.pixabay.com/photo/2018/09/25/11/10/ditch-3701955_1280.jpg') center top;
-        background-size: cover;
-        z-index: -1;
-        padding-bottom: 2vh;
+        grid-template-columns: repeat(1, 1fr);
+        align-content: space-between;
+        margin: auto;
+        gap: 3vh;
+        max-width: 90%;
+        padding-top: 14vh;
+        place-items: center;
 
-        
-        .about_pic {
-            grid-column: 1;
-            grid-row: 1;
-
-            img {
-                width: 25vw;
-                height: 25vw;
-                margin: 4vw 2vw 0vw 2vw;
-                border: 1px solid white;
-            }
-
+        img {
+            box-shadow: $secondary-color 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, $secondary-color 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, $primary-color 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, $secondary-color 30px -30px, $secondary-color 40px -40px 0px -3px, $primary-color 40px -40px;
+            width:150px;
+            height: 150px;
+            object-fit: cover;
+            margin-left: -8vw;
         }
 
-      p {
-        grid-column: 1;
-        grid-row: 2;
-        
-      }
-    }
-
-    &_bio {
-        text-align: left;
-        padding: 0vw 2vw;
-
-        .text-secondary {
-            padding-bottom: 1rem;
+        p {
+            font-size: 4.5vw;
+            text-align: justify;
+            padding: 3vw;
+            color:whitesmoke;
+            backdrop-filter: blur(10px);
+            text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+            0px 8px 13px rgba(0,0,0,0.1),
+            0px 18px 23px rgba(0,0,0,0.1);
+            padding: 5vw 1vw 2vw;
+            
         }
     }
 
     .hard-skills {
-        border-top: 5px solid $secondary-color;
         width: 90%;
         position: relative;
         margin-left: auto;
         margin-right: auto;
         border-radius: 5px;
+        color: whitesmoke;
+        margin-bottom: 2vh;
 
         h2 {
             margin-top: 2vh;
+            text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+            0px 8px 13px rgba(0,0,0,0.1),
+            0px 18px 23px rgba(0,0,0,0.1);
+            color: whitesmoke;
         }
     }
 
@@ -111,9 +96,9 @@
             grid-row: 1;
 
             &::after {
-                content: 'HTML 90%';
+                content: 'HTML';
                 text-align: center;
-                padding: 3.5vw;  
+                padding: 4.5vw 1vw;  
                 top: 3%;
                 left: 3%;
                 bottom: 3%;
@@ -132,9 +117,9 @@
             grid-row: 1;
 
             &::after {
-                content: 'CSS&SASS 85%';
+                content: 'CSS&SASS';
                 text-align: center;
-                padding: 3.5vw 1vw;  
+                padding: 4.5vw 1vw;  
                 top: 3%;
                 left: 3%;
                 bottom: 3%;
@@ -152,9 +137,9 @@
             grid-row: 1;
 
             &::after {
-                content: 'BOOTSRAP 85%';
+                content: 'REACT/JS';
                 text-align: center;
-                padding: 3.5vw 0.9vw;
+                padding: 4.5vw 0.1vw;  
                 top: 3%;
                 left: 3%;
                 bottom: 3%;
@@ -162,8 +147,8 @@
             }
 
             &::before {
-                transform: skewY(-18deg);
-                transform-origin: 0 0;
+                transform: skewY(0);
+                transform-origin: 0 0;;
             }
         }
 
@@ -172,9 +157,9 @@
             grid-row: 1;
 
             &::after {
-                content: 'WORDPRESS 75%';
+                content: 'BOOTSTRAP';
                 text-align: center;
-                padding: 3.5vw 0.1vw;  
+                padding: 4.5vw 0.1vw;  
                 top: 3%;
                 left: 3%;
                 bottom: 3%;
@@ -194,9 +179,9 @@
             border: 0.1px solid grey;
 
             &::after {
-                content: 'JAVASCRIPT 40%';
+                content: 'WORDPRESS';
                 text-align: center;
-                padding: 3.5vw 0.5vw;  
+                padding: 4.5vw 0vw;  
                 top: 3%;
                 left: 3%;
                 bottom: 3%;
@@ -219,9 +204,9 @@
             border: 0.1px solid grey;
 
             &::after {
-                content: 'PYTHON 30%';
+                content: 'PYTHON';
                 text-align: center;
-                padding: 3.5vw 2vw;  
+                padding: 4.5vw 2vw;  
                 top: 3%;
                 left: 3%;
                 bottom: 3%;
@@ -239,30 +224,32 @@
 
     }
 
-    .jobs {
-        width: 60vw;
+    h2 {
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+        0px 8px 13px rgba(0,0,0,0.1),
+        0px 18px 23px rgba(0,0,0,0.1);
+        color: whitesmoke;
+        margin-top: 5vh;
+    }
+
+    .work {
+        width: 80vw;
         margin: 0rem auto 0 auto;
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2rem;
-        border-top: 5px solid $secondary-color;
         margin-top: 5vh;
 
-        h2 {
-            margin-top: 2vh;
-        }
 
-        &_job {
-            background: lighten($primary-color, 10%);
-            padding: 0.5rem;
+
+        article {
+            color:whitesmoke;
+            backdrop-filter: blur(10px);
+            text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+            0px 8px 13px rgba(0,0,0,0.1),
+            0px 18px 23px rgba(0,0,0,0.1);
+            padding: 2vw 1vw 2vw;
             border-bottom: 5px solid $secondary-color;
-
-            h2, h3 {
-                margin: 0.5rem 0;
-            }
-            h6 {
-                margin: 0.3rem 0;
-            }
         }
     }
 }

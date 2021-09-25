@@ -5,7 +5,7 @@ const Homepage = () => {
         <>
         <section className="homepage">
             <div className="homepage_name">
-            <img src="CV_logo.JPG" alt="Carmen Vernica - Front-end Developer"/>
+            <img src="images/CV_logo.JPG" alt="Carmen Vernica - Front-end Developer"/>
             </div>
             <div className="social-icons">
             <ul >

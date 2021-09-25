@@ -1,103 +1,66 @@
 .projects {
-    padding-bottom: 5vh;
-
-    &_bio-image {
-        height: 15vh;
-        width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-
-      .text-secondary {
-        font-size: 5vh;
-        margin-bottom: 1vh;  
-      }
+    color:whitesmoke;
+    margin-top: 10vh;
+     
+    & h1 {
+        font-size: 7vw;
+        padding: 4vw;
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+        margin-bottom: 5vh;
     }
-    
-    &_items {
-        width: 60vw;
-        margin: 2rem auto 0 auto;
+
+    & h4, p {
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+        0px 8px 13px rgba(0,0,0,0.1),
+        0px 18px 23px rgba(0,0,0,0.1);
+        padding: 5vw 0 2vw 0;
+    }
+
+    p {
+        font-size: 4.5vw;
+        text-align: justify;
+        padding: 3vw;
+    }
+
+    .cards {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 1rem;
-    }
+        grid-template-columns: repeat(1, 1fr);
+        align-content: space-between;
+        margin: auto;
+        gap: 5vh;
+        max-width: 90%;
 
-    &_item {
-        position: relative;
-        border-bottom: 5px solid $secondary-color;
-        overflow: hidden;
-        cursor:pointer;
-
-        h1 {
-            position: absolute;
-            text-align: center;
-            margin: 0 0 0 auto;
-            width:100%;
-            background-color:rgba($primary-color, 0.7);
-            padding: 1%;
-            font-size: 2vh;
-            letter-spacing: 0;
-
-            span {
-                font-size: 3vh;
-                color: $secondary-color;
-            }
+        .article {
+            height: 40vh;
+            width: 80vw;
+            margin-top:11vw;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: $secondary-color 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, $secondary-color 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, $primary-color 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, $secondary-color 30px -30px, $secondary-color 40px -40px 0px -3px, $primary-color 40px -40px;
         }
 
-        img {
-            width: 100%;
+
+        li {
+            float: left;
+          }
+          
+          li a {
+            display: block;
+          }
+
+          .github, .online {
+              color: $secondary-color;
+              position:fixed;
+              margin-left: 10vw;
+              bottom: 1vh;
+          }
+
+          .online {
+              margin-left: 48vw;
         }
 
-        &::after {
-            content: '';
-            position: absolute;
-            top: 100%;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background:$secondary-color;
-            opacity: 0;
-            @include transition-ease;
-        }
-
-        &:hover {
-            &::after {
-                top: 0;
-                opacity: .0;
-            }
-            .projects_btn {
-                opacity: 1;
-            }
-        }
     }
 
-    &_btns {
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        z-index: 1;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: flex-end;
-        text-align: center;
-    }
-
-    &_btn {
-        opacity: 0;
-        color:whitesmoke;
-        @include transition-ease;
-        font-size: 2vh;
-        background-color:rgba($primary-color, 0.7);
-        
-
-        &:hover {
-            color: $secondary-color;
-        }
-    }
-
-    footer {
-        margin:0;
-    }
 }

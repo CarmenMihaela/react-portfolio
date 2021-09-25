@@ -60,7 +60,7 @@ export const projects = [
         title: "Vorba dulce",
         desc: "The game is about guessing a word based on a picture shown. It is used by the Romanian weekend school in Groningen. On mobile, it opens best with Chrome. It is made with vanilla JavaScript and it is responsive.",
         github: "https://github.com/CarmenMihaela/Vorba-dulce-game",
-        live: "https://carmenmihaela.com/index_en.html",
+        live: "https://carmenmihaela.com/vorbadulce/index_en.html",
         image: "./images/vorbadulce.JPG"
     },
 

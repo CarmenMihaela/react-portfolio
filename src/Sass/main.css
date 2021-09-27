@@ -462,13 +462,13 @@ header nav ul {
 
 .projects .cards .github, .projects .cards .online {
   color: #FF5CA0;
-  position: fixed;
+  position: absolute;
   margin-left: 10vw;
   bottom: 1vh;
 }
 
 .projects .cards .online {
-  margin-left: 48vw;
+  margin-left: 45vw;
 }
 
 .contact {

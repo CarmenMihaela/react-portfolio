@@ -52,13 +52,16 @@
 
           .github, .online {
               color: $secondary-color;
-              position: absolute;
+              position: fixed;
               margin-left: 10vw;
-              bottom: 1vh; 
+              bottom: 1vh;
+              z-index: 9999;
+              transform:translateZ(0);
+              -webkit-transform: translateZ(0);
           }
 
           .online {
-              margin-left: 45vw;
+              margin-left: 48vw;
         }
 
     }

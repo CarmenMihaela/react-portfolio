@@ -201,7 +201,7 @@ header nav ul {
   border-radius: 50%;
   width: 12vw;
   height: 12vw;
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   text-align: left;
   background-color: #FF5CA0;
   overflow: hidden;
@@ -462,13 +462,16 @@ header nav ul {
 
 .projects .cards .github, .projects .cards .online {
   color: #FF5CA0;
-  position: absolute;
+  position: fixed;
   margin-left: 10vw;
   bottom: 1vh;
+  z-index: 9999;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 .projects .cards .online {
-  margin-left: 45vw;
+  margin-left: 48vw;
 }
 
 .contact {

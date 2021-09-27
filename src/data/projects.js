@@ -23,8 +23,8 @@ export const projects = [
         id: uuidv4(),
         title: "Check your math",
         desc: "A JavaScript game that gives you math to do. You can play it on your mobile device too. ",
-        github: "https://github.com/CarmenMihaela/react-weather-app",
-        live: "https://github.com/CarmenMihaela/Quiz",
+        github: "https://github.com/CarmenMihaela/Quiz",
+        live: "https://carmenmihaela.com/quiz/",
         image: "./images/quiz.JPG"
     },
 

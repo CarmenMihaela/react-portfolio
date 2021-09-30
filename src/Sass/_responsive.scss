@@ -29,7 +29,7 @@
             padding:2vw 0;
         }
         .social-icons {
-            top: 22vh;
+            margin-top: 22vh;
         }
         
     }
@@ -48,6 +48,7 @@
 
         p {
             font-size: 1.1vw;
+            padding: 2vw;
         }
 
         .cards {
@@ -71,9 +72,10 @@
             }
   
             .online {
-                margin-left: 17vw;
+                margin-left: 7vw;
 
-        }}
+        }
+    }
     }
 
     .about {

@@ -462,16 +462,13 @@ header nav ul {
 
 .projects .cards .github, .projects .cards .online {
   color: #FF5CA0;
-  position: fixed;
+  position: relative;
   margin-left: 10vw;
-  bottom: 1vh;
-  z-index: 9999;
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
+  margin-top: 1vh;
 }
 
 .projects .cards .online {
-  margin-left: 48vw;
+  margin-left: 20vw;
 }
 
 .contact {
@@ -512,7 +509,7 @@ header nav ul {
 .contact .social-icons {
   font-size: 5vh;
   position: fixed;
-  top: 25vh;
+  margin-top: 25vh;
 }
 
 .contact .social-icons a {
@@ -559,7 +556,7 @@ header nav ul {
     padding: 2vw 0;
   }
   .contact .social-icons {
-    top: 22vh;
+    margin-top: 22vh;
   }
   .projects {
     margin-top: 0vh;
@@ -573,6 +570,7 @@ header nav ul {
   }
   .projects p {
     font-size: 1.1vw;
+    padding: 2vw;
   }
   .projects .cards {
     display: -ms-grid;
@@ -597,7 +595,7 @@ header nav ul {
     margin-left: 5vw;
   }
   .projects .cards .online {
-    margin-left: 17vw;
+    margin-left: 7vw;
   }
   .about .me {
     display: -ms-grid;

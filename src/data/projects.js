@@ -31,7 +31,7 @@ export const projects = [
     {
         id: uuidv4(),
         title: "Offers log",
-        desc: "An interface made with Python's tkinter and some libraries (matplotlib and numpy), and sqlite3 database. It has 3 tabs, and the entries are stored in a database that is updated with each entry.",
+        desc: "An interface made with Python's tkinter and some libraries (matplotlib and numpy), and sqlite3. It has 3 tabs, and the entries are stored in a database that is updated with each entry.",
         github: "https://github.com/CarmenMihaela/Offers-Log-GUI",
         live: "https://replit.com/@CarmenMihaela/Offers-Log-GUI-3-tabs#main.py",
         image: "./images/offerslog.JPG"
@@ -58,7 +58,7 @@ export const projects = [
     {
         id: uuidv4(),
         title: "Vorba dulce",
-        desc: "The game is about guessing a word based on a picture shown. It is used by the Romanian weekend school in Groningen. On mobile, it opens best with Chrome. It is made with vanilla JavaScript and it is responsive.",
+        desc: "Guess the word based on a picture shown. This game is used by the Romanian weekend school in Groningen. On mobile, it opens best with Chrome. Made with vanilla JavaScript and responsive.",
         github: "https://github.com/CarmenMihaela/Vorba-dulce-game",
         live: "https://carmenmihaela.com/vorbadulce/index_en.html",
         image: "./images/vorbadulce.JPG"

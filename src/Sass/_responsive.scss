@@ -1,12 +1,6 @@
 
 @include media-lg {
-    .homepage {
-        &_name {
-            height: 45vh;
-            width: 30vw;
-        }
-        
-    }
+
     .menu-btn button {
         margin-left: 90vw;
     }
@@ -56,15 +50,16 @@
             grid-template-columns: repeat(2, 1fr);
             max-width: 1200px;
             margin: auto;
-            gap: 70px;
+            gap: 10px;
+            justify-items: center;
 
             .article {
                 height: 40vh;
                 width: 27vw;
-                margin-top:5vw;
+                margin:2vh 0;
                 border-radius: 10px;
                 backdrop-filter: blur(10px);
-                box-shadow: $secondary-color 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, $secondary-color 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, $primary-color 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, $secondary-color 30px -30px, $secondary-color 40px -40px 0px -3px, $primary-color 40px -40px;
+                
             }
             
             .github, .online {
@@ -79,6 +74,7 @@
     }
 
     .about {
+        margin:0 auto 10vh;
         .me {
             display: grid;
             grid-template-columns: 300px 1fr;
@@ -93,6 +89,7 @@
                 margin-bottom: 2vh;
             }
 
+
             p {
                 font-size: 1.5vw;
                 padding:1vw;
@@ -103,8 +100,15 @@
     .work {
         grid-template-columns: repeat(4, 1fr);
     }
-}
 
+    .workexp {
+        margin-top: 10vh;
+    }
+
+    .skill-container {
+        width: 82%;
+    }
+}
 
 }
 

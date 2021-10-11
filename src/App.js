@@ -3,7 +3,7 @@ import "./Sass/main.css"
 
 // Components
 import Homepage from "./components/Homepage";
-import Menu from "./components/Menu";
+import Menu from "./components/Navbar";
 
 
 //Pages
@@ -14,26 +14,9 @@ import Contact from "./pages/Contact";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <>
     <Menu />
-    <Switch>
-    <Route path="/" exact  >
-        <Homepage />
-      </Route>
-      <Route path="/projects">
-        <Projects />
-      </Route>
-      <Route path="/about">
-        <About />
-      </Route>
-      <Route path="/contact">
-        <Contact />
-      </Route>
-      <Route path="*">
-        <Error />
-      </Route>
-    </Switch>
-    </BrowserRouter>
+    </>
   );
 }
 

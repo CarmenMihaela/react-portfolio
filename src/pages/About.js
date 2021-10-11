@@ -27,7 +27,7 @@ find reliable solutions.
                 </div>
             </div>
                 
-                <h2 class="text-secondary">WORK EXPERIENCE</h2>
+                <h2 class="text-secondary workexp">WORK EXPERIENCE</h2>
                 <div className="work">
                     {items.map(({ id, position, employer, years }) => (
                         <article key={id}>

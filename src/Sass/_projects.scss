@@ -1,6 +1,6 @@
 .projects {
-    color:whitesmoke;
-    margin-top: 10vh;
+    color: $primary-color;
+    margin: 10vh auto;
      
     & h1 {
         font-size: 7vw;
@@ -16,6 +16,10 @@
         0px 8px 13px rgba(0,0,0,0.1),
         0px 18px 23px rgba(0,0,0,0.1);
         padding: 5vw 0 2vw 0;
+    }
+
+    h4 {
+        color: $secondary-color;
     }
 
     p {
@@ -35,10 +39,10 @@
         .article {
             height: 40vh;
             width: 80vw;
-            margin-top:11vw;
+            margin:11vw auto;
             border-radius: 10px;
             backdrop-filter: blur(10px);
-            box-shadow: $secondary-color 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, $secondary-color 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, $primary-color 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, $secondary-color 30px -30px, $secondary-color 40px -40px 0px -3px, $primary-color 40px -40px;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
         }
 
 

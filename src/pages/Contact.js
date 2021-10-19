@@ -1,4 +1,5 @@
 import {FaGit, FaGithub, FaLinkedin, FaEnvelopeSquare} from "react-icons/fa"
+import Typewriter from "typewriter-effect";
 
 const Contact = () => {
     return (
@@ -11,6 +12,35 @@ const Contact = () => {
                 <li><a href="https://www.linkedin.com/in/carmen-vernica/" target="_blank" rel="noopener noreferrer"> <FaLinkedin/></a></li>
             </ul>
             </div>
+            {/* <h1 className="typewriter" >
+                    <Typewriter
+
+                        onInit={(typewriter) => {
+
+                            typewriter
+
+                                .typeString("I ❤ to develop. ")
+
+                                .pauseFor(1000)
+                                .typeString("I ❤ React.js. ")
+                                
+
+                                .pauseFor(1000)
+                                
+                                .typeString("I ❤ vanilla JS. ")
+                                
+                                .pauseFor(1000)
+                                
+                                .typeString("I ❤ Sassy CSS. ")
+
+                                .pauseFor(1000)
+                                
+                                .typeString("I ❤ Python.")
+                                .start();
+
+                        }}
+                    />
+                    </h1> */}
         </div>
     )
 }

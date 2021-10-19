@@ -1,13 +1,14 @@
-$primary-color: #77D970;
-$secondary-color: #FF5CA0;
-$tertiary-color: #172774;
+$primary-color: rgb(119, 217, 112);
+$secondary-color: rgb(214, 64, 127);
+$tertiary-color: rgb(23, 39, 116);
 $background-overlay: rgba(0, 0 , 0, 0.5);
+$box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: auto;
 }
 
 

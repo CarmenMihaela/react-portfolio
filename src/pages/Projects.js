@@ -10,7 +10,10 @@ const Projects = () => {
         <h1>Here's what I've built so far:</h1>
         <div className="cards">
             {cards.map(({id, title, desc, github, live, image}) => (
-                <div className="article" key={id}> 
+                <div className="article" key={id} style={{backgroundImage: ` 
+                linear-gradient(to bottom, rgba(23, 39, 116, 0.9), rgba(23, 39, 116, 0.5)), 
+                url(${image})` 
+    }}> 
                 <h4>{title}</h4>
                 <p>{desc}</p>
                 <ul>
